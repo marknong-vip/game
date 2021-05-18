@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>推箱子</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div id="game-screen"></div>
+  <div class="btn-group">
+    <input type="button" id="last" value="上一关" onclick="pb.last_level()"/>
+    <span id="which-level">第几关</span>
+    <input type="button" id="next" value="下一关" onclick="pb.next_level()"/>
+    <input type="button" value="重玩本关" onclick="pb.replay()" />
+  </div>
+  <!-- 引入地图 -->
+  <script src="js/level.js"></script>
+
+  <!-- 开始游戏 -->
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
